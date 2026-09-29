@@ -1,0 +1,7 @@
+/target
+
+#jetbrains ide folder?
+./idea
+
+#macos system file?
+.DS_store
