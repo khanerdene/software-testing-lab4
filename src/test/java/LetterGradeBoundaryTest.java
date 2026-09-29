@@ -9,9 +9,10 @@ public class LetterGradeBoundaryTest {
         GradeCalculator calculator = new GradeCalculator();
 
         // Act
-        String[] results = new String[5];
+        String[] results = new String[6];
 
         results[0] = calculator.letterGrade(0);
+        results[1] = calculator.letterGrade(60);
         results[2] = calculator.letterGrade(70);
         results[3] = calculator.letterGrade(80);
         results[4] = calculator.letterGrade(90);
