@@ -8,7 +8,7 @@ public class GradeCalculator {
             throw new IllegalArgumentException("Score cannot be less than 0 or more than 100");
         }
 
-        if (score > 90)
+        if (score >= 90)
             return "A";
         else if (score >= 80)
             return "B";
