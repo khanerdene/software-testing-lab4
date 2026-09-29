@@ -1,15 +1,17 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class LetterGradeFractionalValueTest {
     @Test
+    @DisplayName("letterGrade - Хязгаарын утгуудаас бага хэмжээгээр зөрөхөд хариу зөв байх")
     void assignsGradesForFractionalScoresNearThresholds() {
         // Arrange
         GradeCalculator calculator = new GradeCalculator();
+        String[] results = new String[5];
 
         //Act
-        String[] results = new String[5];
 
         results[0] = calculator.letterGrade(59.99);
         results[1] = calculator.letterGrade(69.99);

@@ -1,11 +1,13 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 public class TotalScoreParametrizedTest {
     @ParameterizedTest
+    @DisplayName("totalScore - олон төрлийн энгийн утгууд шалгах параметрт тест")
     @CsvSource({
         "0, 0, 0, 0, 0, 0",
         "10, 40, 10, 10, 30, 100",
@@ -30,6 +32,7 @@ public class TotalScoreParametrizedTest {
     }
 
     @ParameterizedTest
+    @DisplayName("totalScore - олон төрлийн буруу утгууд exception шалгах параметрт тест")
     @CsvSource({
         "-1, 0, 0, 0, 0",
         "0, -1, 0, 0, 0",

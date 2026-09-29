@@ -1,9 +1,11 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 public class LetterGradeBoundaryParametrizedTest {
+    @DisplayName("letterGrade - олон төрлийн энгийн утгууд шалгах параметрт тест")
     @ParameterizedTest
     @CsvSource(
         {"95,A",

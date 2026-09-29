@@ -1,15 +1,17 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class LetterGradeBoundaryTest {
     @Test
+    @DisplayName("letterGrade - Хязгаарын утгуудад гаралт зөв байх")
     void returnsExpectedGradeAtEachThreshold() {
         // Arrange
         GradeCalculator calculator = new GradeCalculator();
+        String[] results = new String[6];
 
         // Act
-        String[] results = new String[6];
 
         results[0] = calculator.letterGrade(0);
         results[1] = calculator.letterGrade(60);
